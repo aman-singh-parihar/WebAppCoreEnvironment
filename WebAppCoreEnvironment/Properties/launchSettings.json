@@ -1,0 +1,64 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:49253",
+      "sslPort": 44366
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "LOCAL_DEVELOPMENT": "LocalMachine-IISExpress",
+        //"ASPNETCORE_ENVIRONMENT": "Development-IISExpress"
+      }
+    },
+    "IIS-Production": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "LOCAL_DEVELOPMENT": "LocalMachine-IISExpress",
+        "ASPNETCORE_ENVIRONMENT": "Production-IISExpress"
+      }
+    },
+    "IIS-Staging": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "LOCAL_DEVELOPMENT": "LocalMachine-IISX-Staging",
+        "ASPNETCORE_ENVIRONMENT": "Staging-IISX-Staging"
+      }
+    },
+    "WebAppCoreEnvironment": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "LOCAL_DEVELOPMENT": "LocalMachine-WebAppCoreEnvironment",
+        "DOTNET_ENVIRONMENT": "Development:- dotnet envrionment",
+        "ASPNETCORE_ENVIRONMENT": "Development:- aspnetcore envrionment"
+      },
+      "dotnetRunMessages": "true",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    },
+    "KestrelStaging": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "LOCAL_DEVELOPMENT": "LocalMachine-KestrelStaging",
+        "ASPNETCORE_ENVIRONMENT": "Staging-KestrelStaging"
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  }
+}
